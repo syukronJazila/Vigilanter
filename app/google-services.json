@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "735489526410",
+    "project_id": "vigilanter-gemastik",
+    "storage_bucket": "vigilanter-gemastik.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735489526410:android:624803f4d65cd10e16fb73",
+        "android_client_info": {
+          "package_name": "com.belajar.vigilanter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANgsqr2nJbNIfkg_1EwVbYJUBPz5ALlU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

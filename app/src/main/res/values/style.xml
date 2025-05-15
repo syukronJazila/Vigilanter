@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomDatePicker" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:headerBackground">@color/primary</item> <!-- Warna latar belakang header -->
+        <item name="colorAccent">@color/yellow</item>
+        <item name="textFillColor">@color/white</item>
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <!-- Style untuk AlertDialog -->
+    <style name="CustomAlertDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:textColorPrimary">@color/primary</item>
+        <item name="backgroundColor">@color/primary</item>
+    </style>
+
+
+</resources>

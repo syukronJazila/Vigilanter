@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buat Akun"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="33sp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt"
+        app:layout_constraintBottom_toTopOf="@id/masuk">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <EditText
+                android:id="@+id/namaDepan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Nama Depan"
+                android:inputType="textNoSuggestions"
+                android:paddingStart="10dp"
+                android:textColor="@color/opacitiy_white"
+                android:textColorHint="@color/opacitiy_white"
+                android:drawableLeft="@drawable/transparent_icon"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/namaBelakang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Nama Belakang"
+                android:inputType="textNoSuggestions"
+                android:paddingStart="10dp"
+                android:textColor="@color/opacitiy_white"
+                android:textColorHint="@color/opacitiy_white"
+                android:drawableLeft="@drawable/transparent_icon"
+                android:gravity="center_vertical"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/jenisKelamin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="none"
+                    android:background="@drawable/edit_text"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Jenis Kelamin"
+                    android:textColor="@color/opacitiy_white"
+                    android:textColorHint="@color/opacitiy_white"
+                    android:drawableLeft="@drawable/transparent_icon"
+                    android:gravity="center_vertical"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/tanggalLahir"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:focusable="false"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Tanggal Lahir (hh/bb/tttt)"
+                android:inputType="date"
+                android:paddingStart="10dp"
+                android:textColor="@color/opacitiy_white"
+                android:textColorHint="@color/opacitiy_white"
+                android:drawableLeft="@drawable/transparent_icon"/>
+
+            <EditText
+                android:id="@+id/nik"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Nomor Induk Kependudukan (NIK)"
+                android:inputType="numberDecimal|textNoSuggestions"
+                android:importantForAccessibility="no"
+                android:paddingStart="10dp"
+                android:textColor="@color/opacitiy_white"
+                android:textColorHint="@color/opacitiy_white"
+                android:drawableLeft="@drawable/transparent_icon"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/noHp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Nomor Telepon"
+                android:inputType="phone"
+                android:paddingStart="10dp"
+                android:textColor="@color/opacitiy_white"
+                android:textColorHint="@color/opacitiy_white"
+                android:drawableLeft="@drawable/transparent_icon"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Email"
+                android:inputType="text|textNoSuggestions"
+                android:paddingStart="10dp"
+                android:textColor="@color/opacitiy_white"
+                android:textColorHint="@color/opacitiy_white"
+                android:drawableLeft="@drawable/transparent_icon"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/passwordBaru"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Kata Sandi Baru"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textColor="@color/opacitiy_white"
+                android:textColorHint="@color/opacitiy_white"
+                android:drawableLeft="@drawable/transparent_icon"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/konfirmasiPasseword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_text"
+                android:drawablePadding="10dp"
+                android:ems="15"
+                android:hint="Konfirmasi Kata Sandi Baru"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textColor="@color/opacitiy_white"
+                android:textColorHint="@color/opacitiy_white"
+                android:drawableLeft="@drawable/transparent_icon"
+                android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+                <CheckBox
+                    android:id="@+id/rememberMeCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/opacitiy_white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/terms_and_privacy_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/opacitiy_white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_margin="16dp"
+                    android:textSize="16sp"
+                    android:autoLink="web"
+                    android:linksClickable="true"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/regist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Buat Akun"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/primary">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Sudah punya akun?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/masukText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Masuk"
+                android:clickable="true"
+                android:textAlignment="center"
+                android:textColor="@color/yellow"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/overlayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:elevation="20dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

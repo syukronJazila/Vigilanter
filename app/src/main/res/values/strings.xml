@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Vigilanter</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="pratinjau"><u>Pratinjau Video</u></string>
+    <string name="textToSpeech"><u>Gunakan Teks Dalam Video</u></string>
+    <string name="instruksi_video">Fokuskan kamera pada wajah pelaku atau plat kendaraan dengan pencahayaan yang cukup. Selama merekam, sebutkan deskripsi kejadian secara langsung, sistem akan otomatis mengubah ucapan Anda menjadi teks.</string>
+    <string name="deskripsi_laporan">Pada tanggal 21 Juni 2024 sekitar pukul 20.50 WIB, telah terjadi kejahatan begal di Simpang Tiga Kampus USU. Korban dihentikan oleh dua orang tidak dikenal yang mengendarai sepeda motor tanpa plat nomor. Kedua pelaku mengenakan helm full face dan jaket hitam. Pelaku mengancam korban dengan senjata tajam dan memaksa menyerahkan motornya. Setelah mengambil barang-barang milik korban, pelaku melarikan diri ke arah Jalan Dr. Mansyur. Korban tidak mengalami luka fisik namun mengalami shock dan trauma akibat kejadian tersebut.</string>
+</resources>
