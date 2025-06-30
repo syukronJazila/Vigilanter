@@ -14,6 +14,10 @@ Sisi *backend* dikembangkan menggunakan *Native* PHP dengan database MySQL untuk
 
 Vigilanter juga menggunakan fitur lokasi untuk mengirim koordinat tempat kejadian, serta media upload berupa foto atau video sebagai bukti pelaporan.
 
+## Video Demo Aplikasi
+https://youtu.be/e__RmgqqQjk
+
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
